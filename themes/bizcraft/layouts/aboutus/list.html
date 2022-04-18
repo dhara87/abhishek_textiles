@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+<div id="content">
+
+    <section class="welcome light-gray-bg padding-top-100 padding-bottom-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6">
+
+                    <div class="heading">
+                        <h4>{{ .Params.abouttitle }} </h4>
+                        <hr>
+                    </div>
+                    {{/*  <ul style="line-height: 30px;">
+                        <li style="list-style: disc;">We at Abhishek Synthetic Mills have been working since the last 34 years towards a common goal of making long term business relations with our clients.</li>
+                        <li style="list-style: disc;"></li>
+                        <li style="list-style: disc;"></li>
+                        <li style="list-style: disc;"> </li>
+                        <li style="list-style: disc;"></li>
+                    </ul>  */}}
+                    
+                    <div>{{ .Content }}</div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="services no-margin-top">
+                        <ul class="row">
+                            <li class="col-md-12 col-sm-12 col-xs-12">
+                                <article>
+                                    <div class="media-left">
+                                        <div class="icon">
+                                            <img src="{{ .Params.boximage1 | relURL }}" alt="{{ .Params.boxtitle1 }}">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>{{ .Params.boxtitle1 }} </h6>
+                                        <p>{{ .Params.boxcontent1 }}</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-md-12 col-sm-12 col-xs-12">
+                                <article>
+                                    <div class="media-left">
+                                        <div class="icon">
+                                            <img src="{{ .Params.boximage2 | relURL }}" alt="{{ .Params.boxtitle2 }}">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>{{ .Params.boxtitle2 }}</h6>
+                                        <p>{{ .Params.boxcontent2 }}</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

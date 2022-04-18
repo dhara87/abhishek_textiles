@@ -1,0 +1,11 @@
+<article>
+    <img class="img-responsive" src="{{ .Params.image | relURL }}" alt="{{ .Params.productTitle }}">
+    <div class="post-info">
+        <div class="media-body" style="text-align: center;">
+            <h4 class="tittle-post"><a href="/products">{{ .Params.productTitle }}</a></h4>
+        </div>
+        <div>
+            <p>{{ .Content }}</p>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,147 @@
+{{ define "main" }}
+
+<div id="content">
+
+    <section class="contact-page padding-top-0 padding-bottom-0">
+        <div id="map">
+            <iframe src="{{ .Params.map | relURL }}" width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+        </div>
+
+        <div class="container">
+            <div class="row margin-top margin-bottom-100">
+                <div class="col-md-8 col-sm-7 col-xs-12">
+                    <div class="heading text-left margin-bottom-20">
+                        <h4>{{ .Params.title }}</h4>
+                        <hr>
+                    </div>
+
+                    <div class="contact-form">
+
+                        <div class="margin-top-50">
+                            <div class="contact-form">
+
+                                <div id="contact_message" class="success-msg"><i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
+                                <form method="post" class="form-info">
+                                    <div>
+
+                                            <ul class="row">
+                                                <li class="col-sm-6">
+                                                    <label>
+                                                        <input type="text" tabindex="1" class="form-control" placeholder="Name*" required />
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-6">
+                                                    <label>
+                                                        <input type="text" tabindex="2" class="form-control" placeholder="Email*" required />
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-6">
+                                                    <label>
+                                                        <input type="text" tabindex="3" class="form-control" placeholder="Phone number*" required />
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-6">
+                                                    <label>
+                                                        <input type="text" class="form-control" placeholder="Subject" tabindex="4">
+                                                    </label>
+                                                </li>
+                                                <li class="col-sm-12">
+                                                    <label>
+                                                        <textarea rows="3" cols="20" tabindex="5" class="form-control" placeholder="Message*" style="height:200px;width: 100%;">
+                                                        </textarea>
+                                                    </label>
+                                                </li>
+
+                                                {{/*  <li class="col-sm-6">
+                                                    <label>
+                                                        <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                                        <div class="help-block with-errors"></div>
+                                                    </label>
+                                                </li>  */}}
+
+                                                
+
+                                                <li class="col-sm-12">
+                                                    <input type="submit" value="Send Message" tabindex="6" class="wpcf7-form-control wpcf7-submit btn btn-default submit" style="margin-top: 3%;" />
+                                                </li>
+                                            </ul>
+                                        
+                                </div>
+                                                                
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5 col-xs-12">
+                    <div class="services">
+                        <ul class="row">
+                            <li class="col-md-12">
+                                <article>
+                                    <div class="media-left">
+                                        <div class="icon">
+                                             <i class="fa fa-map" style="font-size: 40px;color:#fff;margin-top: 8px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>Our Location</h6>
+                                        <p>
+                                            {{ .Params.address | markdownify }}
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-md-12">
+                                <article>
+                                    <div class="media-left">
+                                        <div class="icon">
+                                           <i class="fa fa-phone" style="font-size: 40px;color:#fff;margin-top: 8px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>Call Us On</h6>
+                                        <p><a href="tel:{{ .Params.phone }}" style="color: #fff;">
+                                            {{ .Params.phone }}</a><br />
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-md-12">
+                                <article>
+                                    <div class="media-left">
+                                        <div class="icon">
+                                       <i class="fa fa-whatsapp" style="font-size: 40px;color:#fff;margin-top: 8px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>WhatsApp On</h6>
+                                        <p>
+                                            <a href="{{ .Params.whatsapplink | relURL }}" target="_blank" style="color:#fff;">{{ .Params.whatsappcall }}</a>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="col-md-12">
+                                <article>
+                                    <div class="media-left">
+                                        <div class="icon">
+                                           <i class="fa fa-envelope-o" style="font-size: 40px;color:#fff;margin-top: 8px;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h6>Email Id</h6>
+                                        <p>
+                                            <a href="mailto:{{ .Params.email }}" target="_blank" style="color: #e5e5e5;">{{ .Params.email }}</a>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

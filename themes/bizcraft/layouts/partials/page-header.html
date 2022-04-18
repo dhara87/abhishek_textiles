@@ -1,0 +1,12 @@
+<section class="sub-bnr portfolio-bnr" style="background: url('{{ .Params.page_header_bg}}');">
+    <div class="position-center-center">
+        <div class="container">
+            <h4>{{ .Title }}</h4>
+            <img src="/images/bg-sub-bnr.png" alt="">
+            <ol class="breadcrumb">
+                <li><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Params.home }}</a></li>
+                <li class="active">{{ .Title }}</li>
+            </ol>
+        </div>
+    </div>
+</section>

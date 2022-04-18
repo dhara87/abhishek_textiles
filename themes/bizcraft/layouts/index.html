@@ -1,0 +1,162 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.slider.enable }}
+{{ with $data.homepage.slider }}
+<div class="home-slider section">
+    <div id="loader" class="hom-slie">
+        <div class="tp-loader spinner0"><span class="dot1"></span><span class="dot2"></span><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div>
+    </div>
+    <div class="tp-banner-mycontainer" style="height: 400px;">
+        <div class="tp-banner">
+            <ul>
+                {{ range $index, $elements:= .slider_item }}
+                <li data-transition="random" data-title="intro" data-slotamount="7" data-masterspeed="300" data-saveperformance="off">
+                    <img src="{{ .bg_image | absURL }}" alt="slider" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <div class="tp-caption sfb font-raleway text-white text-shadow text-uppercase tp-resizeme"
+                        data-x="['right','right','left','center']" data-hoffset="['400','350','70','15']"
+                        data-y="['center','center','center','center']" data-voffset="['-85','-85','-85','-85']"
+                        data-speed="500"
+                        data-start="500"
+                        data-fontsize="['45','45','45','25']"
+                        data-fontweight="['700','700','700','700']"
+                        data-lineheight="['24','24','24','24']"
+                        data-width="none"
+                        data-height="none"
+                        data-easing="Power3.easeInOut"
+                        data-splitin="none"
+                        data-splitout="none"
+                        data-elementdelay="0.0"
+                        data-endelementdelay="0"
+                        data-responsive_offset="on"
+                        data-whitespace="nowrap"
+                        data-endspeed="300"
+                        style="z-index: 5; color: #fff;">
+                        
+                    </div>
+                    <div class="tp-caption sfb font-raleway text-left tp-resizeme"
+                        data-x="['right','right','left','center']" data-hoffset="['350','300','100','15']"
+                        data-y="['center','center','center','center']" data-voffset="['-10','-10','20','20']"
+                        data-speed="500"
+                        data-start="1000"
+                        data-fontsize="['16','16','16','14']"
+                        data-fontweight="['700','700','700','700']"
+                        data-lineheight="['26','26','26','26']"
+                        data-width="['670','670','470','350']"
+                        data-height="none"
+                        data-easing="Power3.easeInOut"
+                        data-splitin="none"
+                        data-splitout="none"
+                        data-elementdelay="0.0"
+                        data-endelementdelay="0.0"
+                        data-endspeed="300"
+                        data-whitespace="normal"
+                        data-responsive_offset="on"
+                        style="z-index: 6; color: #fff;">
+                       
+
+                    </div>
+                    <div class="tp-caption sfb tp-resizeme"
+                        data-x="['right','left','left','center']" data-hoffset="['650','60','70','15']"
+                        data-y="['center','center','center','center']" data-voffset="['100','100','150','100']"
+                        data-speed="500"
+                        data-start="1400"
+                        data-easing="Power3.easeInOut"
+                        data-splitin="none"
+                        data-splitout="none"
+                        data-elementdelay="0.1"
+                        data-endelementdelay="0.1"
+                        data-endspeed="300"
+                        data-whitespace="nowrap"
+                        data-responsive_offset="on"
+                        style="z-index: 7;">
+                        
+                    </div>
+                    <div class="tp-caption letter-space-4 sfl tp-resizeme"
+                        data-x="['left','left','left','center']" data-hoffset="['-10','0','0','0']"
+                        data-y="['center','center','top','top']" data-voffset="['0','0','0','0']"
+                        data-speed="500"
+                        data-start="800"
+                        data-easing="Power3.easeInOut"
+                        data-splitin="none"
+                        data-splitout="none"
+                        data-elementdelay="0.1"
+                        data-endelementdelay="0.1"
+                        data-endspeed="300"
+                        data-responsive_offset="on"
+                        style="z-index: 1; padding-left: 30px;">
+                        
+                    </div>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ end }}
+
+<div id="content">
+    {{ if $data.homepage.about.enable }}
+    {{ with $data.homepage.about }}
+    <section class="welcome padding-top-100 padding-bottom-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="heading">
+                        <h4>{{ .title | markdownify }} </h4>
+                        <hr>
+                    </div>
+                    <ul style="line-height: 30px;">
+                        {{ range .about_item }}
+                        <li style="list-style: disc;">{{ .content | markdownify }} </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="text-right">
+                        <img class="img-responsive" src="{{ .image | absURL }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+    {{ end }}
+
+    {{ if $data.homepage.whatweoffer.enable }}
+    {{ with $data.homepage.whatweoffer }}
+    <section class="padding-top-100 padding-bottom-70">
+        <div class="container">
+            <div class="heading text-center">
+                <h4>{{ .title | markdownify }}</h4>
+                <hr>
+            </div>
+            <div class="services style-2">
+                <ul class="row">
+                    {{ range .whatweoffer_item }}
+                    <li class="col-md-4 col-sm-6 col-xs-12">
+                        <article style="height: 254px;">
+                            <div class="media-left">
+                                <div class="icon">
+                                    <img src="{{ .image | absURL }}" alt="{{ .name | markdownify }}">
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h6>{{ .name | markdownify }} </h6>
+                            </div>
+                            <p>{{ .content | markdownify }} </p>
+                        </article>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+    {{ end }}
+    
+</div>
+
+{{ end }}

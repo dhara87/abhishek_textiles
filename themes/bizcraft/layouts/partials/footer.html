@@ -1,0 +1,77 @@
+<section class="sub-footer padding-top-40 padding-bottom-40">
+	<div class="container">
+		<div class="sub-space">
+			<div class="media-body">
+				<h4>{{ .Site.Params.footercontent }} </h4>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="fst-up">
+					<img class="margin-bottom-20" src="{{ .Site.Params.logo | absURL }}" alt="">
+					<div class="clearfix"></div>
+					<h6>Abhishek Textiles</h6>
+					<ul class="row location">
+						<li class="col-xs-12">
+							<p>
+								<i class="fa fa-map-marker"></i>{{ .Site.Params.footeraddress | markdownify}}
+							</p>
+						</li>
+						<li class="col-xs-12">
+							<p>
+								<i class="fa fa-phone"></i> {{ .Site.Params.phone}}<br />
+							   <i class="fa fa-whatsapp"></i> <a href="https://wa.me/919925023060?text=I%20am%20interested%20in%20your%20Products!" target="_blank" style="color:#fff;"> {{ .Site.Params.whatsappcall}}</a>
+							</p>
+						</li>
+						<li class="col-xs-12">
+							<p><i class="fa fa-envelope-o"></i>Email us : <a href="mailto:{{ .Site.Params.email}}" style="color: #ffffff;">{{ .Site.Params.email}}</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<h6>About Us</h6>
+				<p>{{ .Site.Params.footerabout }}</p>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<h6>Quick Links</h6>
+				<ul class="ser-link">
+					<li><a href="{{ site.BaseURL | relLangURL }}"><i class="fa fa-angle-right"></i>{{ site.Params.Home }}</a></li>
+					{{ range .Site.Menus.main }}
+					<li><a href="{{ .URL | relLangURL }}"><i class="fa fa-angle-right"></i>{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<h6>Products</h6>
+				<ul class="ser-link">
+					{{ range .Site.Params.products }}
+					<li><a href="{{ .link | absURL }}"><i class="fa fa-angle-right"></i>{{ .name }}</a></li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="rights">
+	<p>
+		{{ .Site.Params.copyright | markdownify }}
+	</p>
+	<p>
+		{{ .Site.Params.designdevelop | markdownify }}
+	</p>
+</div>
+
+</div>
+
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+

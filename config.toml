@@ -1,0 +1,236 @@
+######################## default configuration ####################
+baseURL = "/"
+title = "Welcome to Abhishek Textiles"
+theme = "bizcraft"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# disqus short name
+disqusShortname = "#" # get your shortname form here : https://disqus.com
+
+############################# Outputs ##############################
+[outputs]
+home = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+unsafe= true
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/settings/settings.css" 
+[[params.plugins.css]]
+link = "plugins/layers/layers.css" 
+[[params.plugins.css]]
+link = "plugins/navigation/navigation.css" 
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css" 
+[[params.plugins.css]]
+link = "plugins/font-awesome/font-awesome.min.css"
+[[params.plugins.css]]
+link = "plugins/ionicons/ionicons.min.css"  
+[[params.plugins.css]]
+link = "plugins/main/main.css" 
+[[params.plugins.css]]
+link = "plugins/style/style.css" 
+[[params.plugins.css]]
+link = "plugins/responsive/responsive.css"  
+
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jquery-3-1-1/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/jquery-1-12-4-min/jquery-1.12.4.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/own-menu/own-menu.js"
+[[params.plugins.js]]
+link = "plugins/jquery-isotope/jquery.isotope.min.js"
+[[params.plugins.js]]
+link = "plugins/jquery-prettyPhoto/jquery.prettyPhoto.js"
+[[params.plugins.js]]
+link = "plugins/owlcarousel/owl.carousel.min.js"
+[[params.plugins.js]]
+link = "plugins/jquery-themepunch/jquery.themepunch.tools.min.js"
+[[params.plugins.js]]
+link = "plugins/jquery-themepunch/jquery.themepunch.revolution.min838f.js?rev=5.0.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.actions.min.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.carousel.min.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.kenburn.min.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.layeranimation.min.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.migration.min.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.navigation.min.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.parallax.min.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.slideanims.min.js"
+[[params.plugins.js]]
+link = "plugins/revolution/revolution.extension.video.min.js"
+[[params.plugins.js]]
+link = "plugins/main/main.js"
+# [[params.plugins.js]]
+# link = "plugins/recaptcha/api.js"
+
+############################## English navigation ###############################
+# [menu]
+  # [[Languages.en.menu.main]]
+  # name = "Home"
+  # URL = "/"
+  # weight = 1
+
+  [[Languages.en.menu.main]]
+  name = "About Us"
+  URL = "/aboutus"
+  weight = 2
+
+  [[Languages.en.menu.main]]
+  name = "Products"
+  URL = "/products"
+  weight = 3
+
+  [[Languages.en.menu.main]]
+  name = "Contact Us"
+  URL = "/contactus"
+  weight = 4
+
+#################### default parameters ################################
+[[params.quote]]
+name = "Get a Quote"
+link = "#"
+
+[[params.callemail]]
+name = "Call Us Now"
+link = "tel:+917922166250"
+label = "+91-79-22166250"
+image = "images/icon-top-1.png"
+
+[[params.callemail]]
+name = "Email us"
+link = "mailto:info@abhishektextiles.com"
+label = "info@abhishektextiles.com"
+image = "images/icon-top-2.png"
+
+[[params.products]]
+name = "Printed Fabrics"
+link = "products"
+
+[[params.products]]
+name = "Printed Fabrics on Blended Fabrics"
+link = "products"
+
+[[params.products]]
+name = "Yarn Dyed Fabrics"
+link = "products"
+
+[params]
+logo = "images/logo.png"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Abhishek Textiles"
+headertitle = "Leading supplier of fabrics in the ladies garment industry!"
+footercontent = "We are one of the largest manufacturer and exporter from India of Performance Textiles for various Industrial and Technical applications."
+footerabout = "We at Abhishek Synthetic Mills have been working since the last 29 years towards a common goal of making long term business relations with our clients."
+footeraddress = "156, New Cloth Market, <br> Near Raipur Gate, Sarangpur, <br> Ahmedabad. 380002 <br> Gujarat (INDIA)"
+phone = "+91-79-22166250"
+whatsappcall = "+91 99250 23060"
+email = "info@abhishektextiles.com"
+# copyright
+copyright = "© 2022 All Rights Reserved by, Abhishek Textiles"
+designdevelop = "Designed & Developed by : [Atcults](https://atcults.com/)  "
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+# copyright
+copyright = "© 2019 All Rights Reserved by, Abhishek Textiles"
+
+
+################################### Deployment Script #####################################
+
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+order = [".jpg$", ".gif$"]
+
+# [[deployment.targets]]
+# An arbitrary name for this target.
+# name = "awsdeploy"
+# The Go Cloud Development Kit URL to deploy to. Examples:
+# GCS; see https://gocloud.dev/howto/blob/#gcs
+# URL = "gs://<Bucket Name>"
+
+#[[deployment.targets]]
+# An arbitrary name for this target.
+# name = "awsdeploy"
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+# URL = "s3://<Bucket Name>?region=<AWS region>"
+
+# Azure Blob Storage; see https://gocloud.dev/howto/blob/#azure
+# URL = "azblob://$web"
+
+# You can use a "prefix=" query parameter to target a subfolder of the bucket:
+# URL = "gs://<Bucket Name>?prefix=a/subfolder/"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+# cloudFrontDistributionID = <ID>
+
+[[deployment.targets]]
+ name = "awsdeploy"
+ URL = "s3://atcultsbeta?region=ap-south-1"
+ cloudFrontDistributionID = "EEU5QY8VOOF3L"
+
+# Optionally, you can include or exclude specific files.
+# See https://godoc.org/github.com/gobwas/glob#Glob for the glob pattern syntax.
+# If non-empty, the pattern is matched against the local path.
+# All paths are matched against in their filepath.ToSlash form.
+# If exclude is non-empty, and a local or remote file's path matches it, that file is not synced.
+# If include is non-empty, and a local or remote file's path does not match it, that file is not synced.
+# As a result, local files that don't pass the include/exclude filters are not uploaded to remote,
+# and remote files that don't pass the include/exclude filters are not deleted.
+# include = "**.html" # would only include files with ".html" suffix
+# exclude = "**.{jpg, png}" # would exclude files with ".jpg" or ".png" suffix
+
+# [[deployment.matchers]] configure behavior for files that match the Pattern.
+# See https://golang.org/pkg/regexp/syntax/ for pattern syntax.
+# Pattern searching is stopped on first match.
+
+# Samples:
+
+[[deployment.matchers]]
+# Cache static assets for 1 year.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+# Set custom content type for /sitemap.xml
+pattern = "^sitemap\\.xml$"
+contentType = "application/xml"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true

@@ -1,0 +1,53 @@
+<div id="wrap">
+    <header>
+        <div class="top-bar">
+            <div class="top-info">
+                <div class="container">
+                    <ul class="personal-info">
+                        <li>{{ .Site.Params.headertitle }}</li>
+                    </ul>
+                    <ul class="personal-info" style="float:right;">
+                         <li>WhatsApp: <a href="https://wa.me/919925023060?text=I%20am%20interested%20in%20your%20Products!" target="_blank">{{ .Site.Params.whatsappcall}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="{{ .Site.BaseURL | relLangURL }}">
+                    <img class="img-responsive" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" style="height: 110px; width: 140px;"></a>
+            </div>
+            <div class="top-info-con">
+                <ul>
+                    {{ range .Site.Params.callemail }}
+                    <li>
+                        <div class="media-left">
+                            <img class="margin-right-10" src="{{ .image | absURL }}" alt="{{ .name }}">
+                        </div>
+                        <div class="media-body">
+                            <h6>{{ .name }} </h6>
+                            <a href="{{ .link | absURL }}">{{ .label }}</a>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav ownmenu">
+                    <li><a href="{{ site.BaseURL | relLangURL }}">{{ site.Params.Home }}</a> </li>
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a> </li>
+                    {{ end }}
+                </ul>
+                <div class="quotes">
+                    {{ range .Site.Params.quote }}
+                    <a href="{{ .link | absURL }}" class="customcolor"><i class="fa fa-pencil-square-o"></i>{{ .name }} </a>
+                    {{ end }}
+                </div>
+            </div>
+        </nav>
+    </header>
+
+

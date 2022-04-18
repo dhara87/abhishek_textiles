@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<section class="blog light-gray-bg padding-top-100 padding-bottom-70">
+    <div class="container">
+        <div class="heading text-center margin-bottom-60">
+            <h4>{{ .Params.subtitle }} </h4>
+            <hr>
+        </div>
+        <div class="row">
+            {{ range .Data.Pages }}
+            <div class="col-md-4 col-sm-6 col-xs-6">
+                {{ .Render "products" }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+  </section>
+
+{{ end }}

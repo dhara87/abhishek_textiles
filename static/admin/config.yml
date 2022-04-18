@@ -1,0 +1,14 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "static/images"
+collections:
+  - name: "clients" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Clients" # Used in the UI, ie.: "New Post"
+    folder: "content/english/clients" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "About Content", name: "aboutcontent", widget: "text" }
+      - { label: "Draft", name: "draft", widget: "bollean" }
