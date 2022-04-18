@@ -6,7 +6,7 @@ boxcontent1: The amazing method that ensures time for everything from now life!
 boxcontent2: To be the top supplier of fabrics in the ladies garment industry.
 boxtitle1: 24/7 services
 boxtitle2: Vision
-title: About  me
+title: About  us
 page_header_bg: /images/aboutus/AboutUsInnerBanner.jpg
 metadescription: This is meta description.
 abouttitle: VALUES
