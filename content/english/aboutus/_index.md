@@ -7,7 +7,7 @@ boxcontent2: To be the top supplier of fabrics in the ladies garment industry.
 boxtitle1: 24/7 services
 boxtitle2: Vision
 title: About  us
-page_header_bg: /images/aboutus/AboutUsInnerBanner.jpg
+page_header_bg: /static/images/virtual_customer_help_desk.jpg
 metadescription: This is meta description.
 abouttitle: VALUES
 ---
