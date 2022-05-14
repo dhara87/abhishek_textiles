@@ -12,8 +12,3 @@ collections:
       - { label: "Page header image", name: "page_header_bg", widget: "image" }
       - { label: "Meta description", name: "metadescription", widget: "text" }
       - { label: "About title", name: "abouttitle", widget: "string" }
-      - { label: "Main content", name: "content", widget: "text" }
-      - { label: "Services header", name: "boxtitle1", widget: "string" }
-      - { label: "Services content", name: "boxcontent1", widget: "text" }
-      - { label: "Vision header", name: "boxtitle2", widget: "string" }
-      - { label: "Vision content", name: "boxcontent2", widget: "text" }
