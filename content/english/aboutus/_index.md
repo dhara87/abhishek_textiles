@@ -9,7 +9,7 @@ boxtitle2: Vision
 title: About Us
 page_header_bg: /images/aboutus/AboutUsInnerBanner.jpg
 metadescription: hello
-abouttitle: VALUES
+abouttitle: Abt
 ---
 
 **We at Abhishek Synthetic Mills have been working since the last 34 years towards a common goal of making long term business relations with our clients.**
