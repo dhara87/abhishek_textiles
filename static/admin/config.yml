@@ -35,7 +35,7 @@ collections:
     folder: "data/en/homepage" # The path to the folder where the documents are stored
     create: false # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: "Slider", name: "slider", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Page header image", name: "page_header_bg", widget: "image" }
       - { label: "Page header image", name: "page_header_bg", widget: "image" }
       - { label: "About", name: "About", widget: "string" }
@@ -45,4 +45,4 @@ collections:
       - { label: About content2, name: content, widget: string}
       - { label: About content3, name: content, widget: string}
       - { label: About content4, name: content, widget: string}
-      - { label: "What we offer", name: "What we offer", widget: "string" }
+      # - { label: "What we offer", name: "What we offer", widget: "string" }
