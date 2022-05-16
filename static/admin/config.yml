@@ -18,5 +18,4 @@ collections:
       - { label: boxcontent2, name: boxcontent2, widget: string}
       - { label: "boxtitle1", name: "boxtitle1", widget: "string" }
       - { label: "boxtitle2", name: "boxtitle2", widget: "string" }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: Intro, name: intro, widget: markdown}
+      - { label: Introduction, name: intro, widget: markdown}
