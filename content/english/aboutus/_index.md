@@ -3,7 +3,7 @@ draft: false
 title: About Us
 page_header_bg: /images/aboutus/AboutUsInnerBanner.jpg
 metadescription: this is meta description
-abouttitle: About
+abouttitle: abt
 boximage1: /images/ser-icon-1.png
 boximage2: /images/ser-icon-2.png
 boxcontent1: The amazing method that ensures time for everything from now life!
