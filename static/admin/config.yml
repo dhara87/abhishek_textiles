@@ -18,4 +18,15 @@ collections:
       - { label: boxcontent2, name: boxcontent2, widget: string}
       - { label: "boxtitle1", name: "boxtitle1", widget: "string" }
       - { label: "boxtitle2", name: "boxtitle2", widget: "string" }
-      - { label: Introduction, name: intro, widget: markdown}
+      - { label: Content, name: main_content, widget: markdown }
+
+  - name: "products" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Products" # Used in the UI, ie.: "New Post"
+    folder: "content/english/products" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Page header image", name: "page_header_bg", widget: "image" }
+      - { label: "Meta description", name: "metadescription", widget: "text" }
+      - { label: "Sub title", name: "subtitle", widget: "string" }
+      
