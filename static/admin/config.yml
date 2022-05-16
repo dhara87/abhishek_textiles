@@ -30,4 +30,20 @@ collections:
       - { label: "Meta description", name: "metadescription", widget: "text" }
       - { label: "Sub title", name: "subtitle", widget: "string" }
 
-  
+  - label: "Products"
+        name: "products"
+        file: "content/english/products/Printed Fabrics.md"
+        fields:
+          - { label: Title, name: title, widget: string}
+          - { label: "Page header image", name: "page_header_bg", widget: "image" }
+          - { label: "Publish Date", name: "date", widget: "datetime"}
+          - { label: Image, name: image, widget: image}
+          - { label: "Product Title", name: "producttitle", widget: "string"}
+          - { label: "Product Description1", name: "productdescription1", widget: "string"}
+          - { label: "Product Description2", name: "productdescription2", widget: "string"}
+          - { label: "Product Description3", name: "productdescription3", widget: "string"}
+          - { label: "Meta description", name: "metadescription", widget: "text" }
+          - { label: "Meta Keywords", name: "metakeywords", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+         
