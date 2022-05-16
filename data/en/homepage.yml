@@ -3,17 +3,17 @@ slider:
   enable : true
   slider_item:
     ################# Slider item loop
-    - bg_image : "images/home/Slider/slider-bg-1.jpg"
+    - bg_image : "/images/home/Slider/slider-bg-1.jpg"
 
     ################# Slider item loop
-    - bg_image : "images/home/Slider/slider-bg-2.jpg"
+    - bg_image : "/images/home/Slider/slider-bg-2.jpg"
       
 
 ############################### about ##################################
 about:
   enable : true
   title : "Welcome to Abhishek Textiles"
-  image : "images/Welcome.jpg"
+  image : "/images/Welcome.jpg"
   about_item:
     # about item loop
     - content : "Abhishek Synthetic Mills, has been supplying good quality fabrics to renowned garmenters since 1985."
@@ -28,7 +28,7 @@ whatweoffer:
   whatweoffer_item:
     # about item loop
     - name: "BEST QUALITY"
-      image: "images/main-icon-1.png"
+      image: "/images/main-icon-1.png"
       content : "Abhishek Textiles Services are committed to meeting the highest quality standards without compromising our safety culture.."
 
     - name: "ON TIME"
