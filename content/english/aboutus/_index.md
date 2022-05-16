@@ -1,7 +1,7 @@
 ---
 draft: false
-boximage1: images/ser-icon-1.png
-boximage2: images/ser-icon-2.png
+boximage1: /images/ser-icon-1.png
+boximage2: /images/ser-icon-2.png
 boxcontent1: The amazing method that ensures time for everything from now life!
 boxcontent2: To be the top supplier of fabrics in the ladies garment industry.
 boxtitle1: 24/7 services

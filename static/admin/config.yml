@@ -12,3 +12,11 @@ collections:
       - { label: "Page header image", name: "page_header_bg", widget: "image" }
       - { label: "Meta description", name: "metadescription", widget: "text" }
       - { label: "About title", name: "abouttitle", widget: "string" }
+      - { label: boximage1, name: boximage1, widget: image}
+      - { label: boximage2, name: boximage2, widget: image}
+      - { label: boxcontent1, name: boxcontent1, widget: string}
+      - { label: boxcontent2, name: boxcontent2, widget: string}
+      - { label: "boxtitle1", name: "boxtitle1", widget: "string" }
+      - { label: "boxtitle2", name: "boxtitle2", widget: "string" }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: Intro, name: intro, widget: markdown}
