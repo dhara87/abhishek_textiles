@@ -34,6 +34,4 @@ intro: >-
 
 **It is the only way we do business.**
 
-
-
-**dhara**
+**rohan**
