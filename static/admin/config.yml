@@ -18,7 +18,7 @@ collections:
       - { label: boxcontent2, name: boxcontent2, widget: string}
       - { label: "boxtitle1", name: "boxtitle1", widget: "string" }
       - { label: "boxtitle2", name: "boxtitle2", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Intro", name: "intro", widget: "markdown" }
 
   - name: "products" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Products" # Used in the UI, ie.: "New Post"
