@@ -11,15 +11,12 @@ boxcontent2: To be the top supplier of fabrics in the ladies garment industry.
 boxtitle1: 24/7 services
 boxtitle2: Vision
 intro: >-
-  **We at Abhishek Synthetic Mills have been working since the last 34 years
+  We at Abhishek Synthetic Mills have been working since the last 34 years
   towards a common goal of making long term business relations with our clients.
 
   We treat our clients as business partners rather than just customers.
 
   The relationship is one where both parties mutually benefit each other over long term.
 
-  This is the reason we work twice as hard as anyone else to provide the best quality fabric at the most competitive rates.**
-
-
-  dhara
+  This is the reason we work twice as hard as anyone else to provide the best quality fabric at the most competitive rates.
 ---
