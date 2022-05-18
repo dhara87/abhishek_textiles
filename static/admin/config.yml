@@ -23,12 +23,24 @@ collections:
   - name: "products" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Products" # Used in the UI, ie.: "New Post"
     folder: "content/english/products" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
+    create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Page header image", name: "page_header_bg", widget: "image" }
+      - { label: "Publish Date", name: "date", widget: "datetime"}
+      - { label: Image, name: image, widget: image}
+      - { label: "Product Title", name: "producttitle", widget: "string"}
+      - { label: "Product Description1", name: "productdescription1", widget: "string"}
+      - { label: "Product Description2", name: "productdescription2", widget: "string"}
+      - { label: "Product Description3", name: "productdescription3", widget: "string"}
       - { label: "Meta description", name: "metadescription", widget: "text" }
+      - { label: "Meta Keywords", name: "metakeywords", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Sub title", name: "subtitle", widget: "string" }
+
+
+
+
 
   # - label: "Products"
   #   name: "products"
