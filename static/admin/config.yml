@@ -144,23 +144,24 @@ collections:
       - { label: "Whatsapp Link", name: "whatsapplink", widget: "string" }
       - { label: "Email Id", name: "email", widget: "string" }
          
-  - name: "Slider" 
-    label: "Slider"
-    folder: "content/english/slider"
+  - name: "Slider 1" 
+    label: "Slider 1"
+    folder: "content/english/slider/slider1"
     create: false
     fields:
-      - { label: "Slider Main Title", name: "main_title", widget: "string" }
-      - { label: "French Slider Main Title", name: "main_title_fr", widget: "string" }
       - { label: "Slider Title", name: "title", widget: "string" }
-      - { label: "French Slider Title", name: "title_fr", widget: "string" }
-      - { label: "Slider Heading", name: "slider_heading", widget: "string" }
-      - { label: "French Slider Heading", name: "slider_heading_fr", widget: "string" }
-      - { label: "Slider Content", name: "slider_content", widget: "text" }
-      - { label: "French Slider Content", name: "slider_content_fr", widget: "text" }
-      - { label: "Slider Image", name: "slider_image_url", widget: "image" }
-      - { label: "French Slider Image", name: "slider_image_url_fr", widget: "image" }
+      - { label: "Slider Image", name: "image", widget: "image" }
       - { label: "Slider Type", name: "type", widget: "string" }
 
+  - name: "Slider 2" 
+    label: "Slider 1"
+    folder: "content/english/slider/slider2"
+    create: false
+    fields:
+      - { label: "Slider Title", name: "title", widget: "string" }
+      - { label: "Slider Image", name: "image", widget: "image" }
+      - { label: "Slider Type", name: "type", widget: "string" }
+      
   - name: "Service" 
     label: "Service"
     folder: "content/services"
