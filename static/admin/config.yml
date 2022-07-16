@@ -149,8 +149,8 @@ collections:
     folder: "content/english/slider/slider1"
     create: false
     fields:
-      - { label: "Slider Title", name: "title", widget: "string" }
-      - { label: "Slider Image", name: "image", widget: "image" }
+      - { label: "Slider 1 Title", name: "title", widget: "string" }
+      - { label: "Slider 1 Image", name: "image", widget: "image" }
       - { label: "Slider Type", name: "type", widget: "string" }
 
   - name: "Slider 2" 
@@ -158,8 +158,8 @@ collections:
     folder: "content/english/slider/slider2"
     create: false
     fields:
-      - { label: "Slider Title", name: "title", widget: "string" }
-      - { label: "Slider Image", name: "image", widget: "image" }
+      - { label: "Slider 2 Title", name: "title", widget: "string" }
+      - { label: "Slider 1 Image", name: "image", widget: "image" }
       - { label: "Slider Type", name: "type", widget: "string" }
       
   - name: "Service" 
