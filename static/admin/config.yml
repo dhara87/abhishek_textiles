@@ -75,7 +75,7 @@ collections:
 
   - name: "About Section" 
     label: "About Section"
-    folder: "content/aboutus"
+    folder: "content/english/aboutus"
     create: false
     fields:
       - { label: "About Title", name: "title", widget: "string" }
@@ -89,20 +89,15 @@ collections:
       - { label: "Box Title 2", name: "boxtitle2", widget: "string" }
       - { label: "Introduction", name: "intro", widget: "markdown" }
 
-  - name: "Chef Section" 
-    label: "Chef"
-    folder: "content/about/our-chef"
+  - name: "Product Section" 
+    label: "Products"
+    folder: "content/english/products"
     create: true
     fields:
-      - { label: "Chef Name", name: "title", widget: "string" }
-      - { label: "French Chef Name", name: "title_fr", widget: "string" }
-      - { label: "Chef Profile", name: "chef_profile", widget: "string" }
-      - { label: "French Chef Profile", name: "chef_profile_fr", widget: "string" }
-      - { label: "Chef Image", name: "chef_image_url", widget: "image" }
-      - { label: "Chef Content", name: "chef_content", widget: "text" }
-      - { label: "French Chef Content", name: "chef_content_fr", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
+      - { label: "Product Title", name: "title", widget: "string" }
+      - { label: "Page Header Background Image", name: "page_header_bg", widget: "image" }
+      - { label: "Product Subtitle", name: "subtitle", widget: "string" }
+    
   - name: "Blog" 
     label: "Blog"
     folder: "content/blog"
