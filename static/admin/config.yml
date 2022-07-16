@@ -98,63 +98,55 @@ collections:
       - { label: "Page Header Background Image", name: "page_header_bg", widget: "image" }
       - { label: "Product Subtitle", name: "subtitle", widget: "string" }
     
-  - name: "Blog" 
-    label: "Blog"
-    folder: "content/blog"
+  - name: "Printed Fabrics" 
+    label: "Printed Fabrics"
+    folder: "content/english/products/Printed Fabrics"
     create: true
     fields:
-      - { label: "Blog Title", name: "title", widget: "string" }
-      - { label: "French Blog Title", name: "title_fr", widget: "string" }
-      - { label: "Blog Slug", name: "slug", widget: "string" }
-      - { label: "Blog Date", name: "blog_date", widget: "datetime" }
-      - { label: "French Blog Date", name: "blog_date_fr", widget: "datetime" }
-      - { label: "Blog Image", name: "blog_image_url", widget: "image" }
-      - { label: "Blog Title", name: "blog_title", widget: "string" }
-      - { label: "French Blog Title", name: "blog_title_fr", widget: "string" }
-      - { label: "Blog Summery", name: "blog_summary", widget: "text" }
-      - { label: "French Blog Summery", name: "blog_summary_fr", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
-  - name: "Contact Section" 
-    label: "Contact"
-    folder: "content/contact"
+      - { label: "Product Name", name: "title", widget: "string" }
+      - { label: "Page Header Background Image", name: "page_header_bg", widget: "image" }
+      - { label: "Product Image", name: "image", widget: "image" }
+      - { label: "Product Title", name: "productTitle", widget: "string" }
+      - { label: "Product Desription", name: "product description", widget: "markdown" }
+      
+  - name: "Printed Fabrics on Blended Fabrics" 
+    label: "Printed Fabrics on Blended Fabrics"
+    folder: "content/english/products/Printed Fabrics on Blended Fabrics"
+    create: true
+    fields:
+      - { label: "Product Name", name: "title", widget: "string" }
+      - { label: "Page Header Background Image", name: "page_header_bg", widget: "image" }
+      - { label: "Product Image", name: "image", widget: "image" }
+      - { label: "Product Title", name: "productTitle", widget: "string" }
+      - { label: "Product Desription", name: "product description", widget: "markdown" }
+   
+  - name: "Yarn Dyed Fabrics" 
+    label: "Yarn Dyed Fabrics"
+    folder: "content/english/products/Yarn Dyed Fabrics"
+    create: true
+    fields:
+      - { label: "Product Name", name: "title", widget: "string" }
+      - { label: "Page Header Background Image", name: "page_header_bg", widget: "image" }
+      - { label: "Product Image", name: "image", widget: "image" }
+      - { label: "Product Title", name: "productTitle", widget: "string" }
+      - { label: "Product Desription", name: "product description", widget: "markdown" }
+   
+  - name: "Contact Us" 
+    label: "Contact Us"
+    folder: "content/english/contactus"
     create: false
     fields:
       - { label: "Contact Title", name: "title", widget: "string" }
-      - { label: "French Contact Title", name: "title_fr", widget: "string" }
+      - { label: "Page Header Background Image", name: "page_header_bg", widget: "image" }
       - { label: "Contact Address", name: "address", widget: "string" }
-      - { label: "French Contact Address", name: "address_fr", widget: "string" }
       - { label: "Contact No", name: "phone", widget: "string" }
-      - { label: "French Contact No", name: "phone_fr", widget: "string" }
-      - { label: "Contact Email", name: "email", widget: "string" }
-      - { label: "French Contact Email", name: "email_fr", widget: "string" }
-      - { label: "Contact Image", name: "page_header_bg", widget: "image" }
-      - { label: "Contact Meta Description", name: "description", widget: "text" }
-   
-  - name: "Counter" 
-    label: "Counter"
-    folder: "content/home/counter"
-    create: false
-    fields:
-      - { label: "Counter Title", name: "title", widget: "string" }
-      - { label: "French Counter Title", name: "title_fr", widget: "string" }
-      - { label: "Counter Count", name: "count", widget: "string" }
-      - { label: "French Counter Count", name: "count_fr", widget: "string" }
-      - { label: "Counter Image", name: "icon", widget: "image" }
-      - { label: "Counter Type", name: "type", widget: "string" }
-   
-  - name: "Gallery" 
-    label: "Gallery"
-    folder: "content/home/gallery"
-    create: true
-    fields:
-      - { label: "Gallery Title", name: "title", widget: "string" }
-      - { label: "Gallery Image", name: "gallery_image_url", widget: "image" }
-      - { label: "Gallery Type", name: "type", widget: "string" }
-   
+      - { label: "Whatsapp No", name: "whatsappcall", widget: "string" }
+      - { label: "Whatsapp Link", name: "whatsapplink", widget: "string" }
+      - { label: "Email Id", name: "email", widget: "string" }
+         
   - name: "Slider" 
     label: "Slider"
-    folder: "content/home/slider_section"
+    folder: "content/english/slider"
     create: false
     fields:
       - { label: "Slider Main Title", name: "main_title", widget: "string" }
@@ -169,92 +161,6 @@ collections:
       - { label: "French Slider Image", name: "slider_image_url_fr", widget: "image" }
       - { label: "Slider Type", name: "type", widget: "string" }
 
-  - name: "Menu Filter Burger" 
-    label: "Menu Filter Burger"
-    folder: "content/menu/menu-filter/burgers-filter"
-    create: true
-    fields:
-      - { label: "Burger Name", name: "title", widget: "string" }
-      - { label: "FrenchBurger Name", name: "title_fr", widget: "string" }
-      - { label: "Burger Price", name: "burger_price", widget: "string" }
-      - { label: "French Burger Price", name: "burger_price_fr", widget: "string" }
-      - { label: "Burger Image", name: "burger_image", widget: "image" }
-      - { label: "Burger Description", name: "burger_content", widget: "text" }
-      - { label: "French Burger Description", name: "burger_content_fr", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
-  - name: "Menu Filter Drink" 
-    label: "Menu Filter Drink"
-    folder: "content/menu/menu-filter/drinks-filter"
-    create: true
-    fields:
-      - { label: "Drink Name", name: "title", widget: "string" }
-      - { label: "French Drink Name", name: "title_fr", widget: "string" }
-      - { label: "Drink Price", name: "drink_price", widget: "string" }
-      - { label: "French Drink Price", name: "drink_price_fr", widget: "string" }
-      - { label: "Drink Image", name: "drink_image", widget: "image" }
-      - { label: "Drink Description", name: "drink_content", widget: "text" }
-      - { label: "French Drink Description", name: "drink_content_fr", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-   
-  
-  - name: "Menu Filter Pasta" 
-    label: "Menu Filter Pasta"
-    folder: "content/menu/menu-filter/pasta-filter"
-    create: true
-    fields:
-      - { label: "Pasta Name", name: "title", widget: "string" }
-      - { label: "French Pasta Name", name: "title_fr", widget: "string" }
-      - { label: "Pasta Price", name: "pasta_price", widget: "string" }
-      - { label: "French Pasta Price", name: "pasta_price_fr", widget: "string" }
-      - { label: "Pasta Image", name: "pasta_image", widget: "image" }
-      - { label: "Pasta Description", name: "pasta_content", widget: "text" }
-      - { label: "French Pasta Description", name: "pasta_content_fr", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-   
-  
-  - name: "Menu Filter Pizza" 
-    label: "Menu Filter Pizza"
-    folder: "content/menu/menu-filter/pizza-filter"
-    create: true
-    fields:
-      - { label: "Pizza Name", name: "title", widget: "string" }
-      - { label: "French Pizza Name", name: "title_fr", widget: "string" }
-      - { label: "Pizza Price", name: "pizza_price", widget: "string" }
-      - { label: "French Pizza Price", name: "pizza_price_fr", widget: "string" }
-      - { label: "Pizza Image", name: "pizza_image", widget: "image" }
-      - { label: "Pizza Description", name: "pizza_content", widget: "text" }
-      - { label: "French Pizza Description", name: "pizza_content_fr", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-
-  - name: "Pizza" 
-    label: "Pizza"
-    folder: "content/menu/our-menu"
-    create: true
-    fields:
-      - { label: "Pizza Name", name: "title", widget: "string" }
-      - { label: "French Pizza Name", name: "title_fr", widget: "string" }
-      - { label: "Pizza Price", name: "pizza_price", widget: "string" }
-      - { label: "French Pizza Price", name: "pizza_price_fr", widget: "string" }
-      - { label: "Pizza Image", name: "pizza_image_url", widget: "image" }
-      - { label: "Pizza Description", name: "pizza_content", widget: "text" }
-      - { label: "French Pizza Description", name: "pizza_content_fr", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-      
-  - name: "Menu_Items" 
-    label: "Menu_Items"
-    folder: "content/menu/our-menu-pricing"
-    create: true
-    fields:
-      - { label: "Menu Item Name", name: "title", widget: "string" }
-      - { label: "French Menu Item Name", name: "title_fr", widget: "string" }
-      - { label: "Menu Item Price", name: "menu_item_price", widget: "string" }
-      - { label: "French Menu Item Price", name: "menu_item_price_fr", widget: "string" }
-      - { label: "Menu Item Image", name: "menu_item_image_url", widget: "image" }
-      - { label: "Menu Item Description", name: "menu_item_content", widget: "text" }
-      - { label: "French Menu Item Description", name: "menu_item_content_fr", widget: "text" }
-      - { label: "Type", name: "type", widget: "string" }
-   
   - name: "Service" 
     label: "Service"
     folder: "content/services"
