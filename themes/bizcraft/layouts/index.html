@@ -1,9 +1,6 @@
 {{ define "main" }}
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.homepage.slider.enable }}
-{{ with $data.homepage.slider }}
 <div class="home-slider section">
     <div id="loader" class="hom-slie">
         <div class="tp-loader spinner0"><span class="dot1"></span><span class="dot2"></span><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div>
@@ -11,9 +8,9 @@
     <div class="tp-banner-mycontainer" style="height: 400px;">
         <div class="tp-banner">
             <ul>
-                {{ range $index, $elements:= .slider_item }}
+                {{ range where .Site.Pages "Type" "slider" }}
                 <li data-transition="random" data-title="intro" data-slotamount="7" data-masterspeed="300" data-saveperformance="off">
-                    <img src="{{ .bg_image | absURL }}" alt="slider" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{{ .Params.image }}" alt="slider" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     <div class="tp-caption sfb font-raleway text-white text-shadow text-uppercase tp-resizeme"
                         data-x="['right','right','left','center']" data-hoffset="['400','350','70','15']"
                         data-y="['center','center','center','center']" data-voffset="['-85','-85','-85','-85']"
@@ -94,59 +91,53 @@
         </div>
     </div>
 </div>
-{{ end }}
-{{ end }}
 
 <div id="content">
-    {{ if $data.homepage.about.enable }}
-    {{ with $data.homepage.about }}
     <section class="welcome padding-top-100 padding-bottom-70">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="heading">
-                        <h4>{{ .title | markdownify }} </h4>
+                        <h4>{{ .Params.welcome_text }} </h4>
                         <hr>
                     </div>
                     <ul style="line-height: 30px;">
-                        {{ range .about_item }}
-                        <li style="list-style: disc;">{{ .content | markdownify }} </li>
-                        {{ end }}
+                        <li style="list-style: disc;">{{ .Params.welcome_content1 }} </li>
+                        <li style="list-style: disc;">{{ .Params.welcome_content2 }} </li>
+                        <li style="list-style: disc;">{{ .Params.welcome_content3 }} </li>
+                        <li style="list-style: disc;">{{ .Params.welcome_content4 }} </li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="text-right">
-                        <img class="img-responsive" src="{{ .image | absURL }}" alt="">
+                        <img class="img-responsive" src="{{ .Params.welcome_img }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    {{ end }}
-    {{ end }}
-
-    {{ if $data.homepage.whatweoffer.enable }}
-    {{ with $data.homepage.whatweoffer }}
+    </div>
+    
     <section class="padding-top-100 padding-bottom-70">
         <div class="container">
             <div class="heading text-center">
-                <h4>{{ .title | markdownify }}</h4>
+                <h4>{{ .Params.offer_text }}</h4>
                 <hr>
             </div>
             <div class="services style-2">
                 <ul class="row">
-                    {{ range .whatweoffer_item }}
+                    {{ range where .Site.Pages "Type" "servicess" }}
                     <li class="col-md-4 col-sm-6 col-xs-12">
                         <article style="height: 254px;">
                             <div class="media-left">
                                 <div class="icon">
-                                    <img src="{{ .image | absURL }}" alt="{{ .name | markdownify }}">
+                                    <img src="{{ .Params.image }}" alt="{{ .Params.title }}">
                                 </div>
                             </div>
                             <div class="media-body">
-                                <h6>{{ .name | markdownify }} </h6>
+                                <h6>{{ .Params.title }}</h6>
                             </div>
-                            <p>{{ .content | markdownify }} </p>
+                            <p>{{ .Params.text }} </p>
                         </article>
                     </li>
                     {{ end }}
@@ -154,9 +145,7 @@
             </div>
         </div>
     </section>
-    {{ end }}
-    {{ end }}
-    
+
 </div>
 
 {{ end }}
