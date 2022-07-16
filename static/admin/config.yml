@@ -154,7 +154,7 @@ collections:
       - { label: "Slider Type", name: "type", widget: "string" }
 
   - name: "Slider 2" 
-    label: "Slider 1"
+    label: "Slider 2"
     folder: "content/english/slider/slider2"
     create: false
     fields:
